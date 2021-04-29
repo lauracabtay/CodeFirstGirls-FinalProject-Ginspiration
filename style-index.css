@@ -1,0 +1,276 @@
+body {
+  background-color: #e3e2df;
+  color: black;
+  margin: 0px;
+  height: 100vh;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  color: #46140c;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+.footer {
+  display: block;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+
+a:hover {
+  font-weight: 100;
+}
+
+.current {
+  pointer-events: none;
+  color: #c6aa9d;
+  background-color: black;
+}
+
+#logo {
+  min-width: 20rem;
+  width: 20rem;
+  float: left;
+  padding: 20px;
+}
+
+#BackgroundColorA {
+  background-color: #dac8bf;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#BackgroundColorB {
+  background-color: #dac8bf;
+}
+
+.centreAlign {
+  text-align: center;
+}
+
+div {
+  margin: 2px 0px;
+}
+
+ul {
+  margin: 10px;
+  padding: 0;
+  float: right;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: 100;
+}
+
+.current {
+  pointer-events: none;
+  color: #c6aa9d;
+  background-color: black;
+}
+
+li {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+}
+
+ul {
+  padding: 0;
+  float: right;
+  overflow: hidden;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .mainSection {
+  margin-top: 30px;
+  font-family: sans-serif;
+  text-align: left;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+  margin-left: 110px;
+  margin-right: 90px;
+}
+.mainSection.box {
+  width: 50%;
+  margin: 0px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+} */
+
+.mainSection {
+  display: flex;
+  flex: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  padding: 20px;
+}
+
+.imageBit {
+  /* padding-right: 40px; */
+  /* padding-left: 200px; */
+  /* float: right; */
+  /* max-width: 60%; */
+  /* margin: 3px; */
+  filter: grayscale(20%) contrast(100%) brightness(95%);
+}
+
+.imgGin {
+  border-radius: 120px 20px 120px 20px;
+  -webkit-box-reflect: below 0px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+button {
+  background-color: white;
+  border: white;
+  border-radius: 12px;
+  color: rgb(71, 3, 73);
+  padding: 20px 35px;
+  font-size: 36px;
+  margin: 5px 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+}
+button:hover {
+  box-shadow: 4px 4px 10px lightgray;
+}
+
+.buttonBit {
+  text-align: center;
+  clear: right;
+  margin-bottom: 55px;
+}
+
+.footerAlign {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  #logo {
+    content: url("images/GT-logo.png");
+    min-width: 10rem;
+    width: 10rem;
+    padding: 20px 10px;
+    margin-top: 5px;
+  }
+
+  ul {
+    margin: 0px;
+  }
+
+  .menuItem {
+    padding: 5px;
+    display: block;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    margin: 0px;
+    font-size: 1rem;
+  }
+
+  .mainSection {
+  }
+
+  .box {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .box-1 {
+    display: block;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  .box-2 {
+    padding-top: 0px;
+    padding-bottom: 120px;
+    margin-right: 10px;
+  }
+
+  .buttonBit {
+    margin-top: 50px;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+  }
+
+  button {
+    transform: scale(1);
+  }
+
+  .imageBit {
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #logo {
+    content: url("images/LOGO2-02.png");
+  }
+
+  ul {
+    margin: 10px;
+  }
+
+  .menuItem {
+    padding: 20px;
+    display: inline;
+  }
+
+  h1 {
+    font-size: 400%;
+  }
+
+  .buttonBit {
+    margin-top: 30px;
+  }
+
+  button:hover {
+    transform: scale(1.2);
+  }
+
+  .imageBit {
+    height: auto;
+  }
+}

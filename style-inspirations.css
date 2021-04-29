@@ -1,0 +1,433 @@
+.backgroundColor {
+  background-color: #e3e2df;
+}
+
+body {
+  margin: 0px;
+}
+
+.Gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.img-grid {
+  width: 100%;
+  vertical-align: middle;
+}
+
+#titlePadding {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 20px;
+}
+
+.caption {
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.centreAlign {
+  text-align: center;
+}
+
+#BackgroundColorA {
+  background-color: #dac8bf;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#BackgroundColorB {
+  background-color: #dac8bf;
+  height: 100px;
+}
+
+.footer {
+  display: block;
+  width: 100%;
+  padding: 40px 0px;
+}
+
+div {
+  margin: 2px;
+}
+
+ul {
+  margin: 10px;
+  padding: 0;
+  float: right;
+  overflow: hidden;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: 100;
+}
+
+.current {
+  pointer-events: none;
+  color: #c6aa9d;
+  background-color: black;
+}
+
+#logo {
+  min-width: 20rem;
+  width: 20rem;
+  float: left;
+  padding: 20px;
+}
+
+li {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  color: #46140c;
+}
+
+.paragraph {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  position: relative;
+  transition: all 0.3s;
+  padding-bottom: 50px;
+}
+
+.img-grid {
+  box-shadow: 4px 4px 10px darkgray;
+}
+
+#containerTop {
+  padding: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+  opacity: 0.9;
+}
+
+.container:hover {
+  transform: scale(1.03);
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 16px 32px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  width: 60%;
+}
+
+.footerAlign {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+/* MODAL */
+
+@media only screen and (max-width: 767px) {
+  .menuItem {
+    padding: 5px;
+    display: block;
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+
+  .paragraph {
+    font-size: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .h2-modal {
+    font-size: 40px;
+    margin: 10px 0;
+  }
+
+  .h3-modal {
+    font-size: 25px;
+  }
+
+  .img-modal {
+    width: 100px;
+  }
+
+  .text-modal {
+    font-size: 16px;
+  }
+
+  .modal-content {
+    padding: 30px 0px 30px 30px;
+    max-height: 85%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 80%;
+  }
+
+  .modal {
+    padding-top: 50px; /* Location of the box */
+    padding-bottom: 100px;
+    width: 100%; /* Full width */
+    height: 80%; /* Full height */
+  }
+
+  .close {
+    padding-right: 20px;
+  }
+
+  .row-2 {
+    margin-right: 30px;
+  }
+
+  .img-grid {
+    display: block;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+  }
+
+  .modal-head-text {
+    font-size: 16px;
+    padding: 10px 30px 10px 0px;
+  }
+
+  #logo {
+    content: url("images/GT-logo.png");
+    min-width: 10rem;
+    width: 10rem;
+    padding: 20px 10px;
+    margin-top: 5px;
+  }
+
+  ul {
+    margin: 0px;
+  }
+
+  .img-grid {
+    border-radius: 20px;
+  }
+
+  .Gallery {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 400%;
+  }
+
+  .paragraph {
+    font-size: 150%;
+  }
+
+  .menuItem {
+    padding: 20px;
+    display: inline;
+  }
+
+  .container {
+    width: 30%;
+    margin: 30px;
+  }
+
+  .h2-modal {
+    font-size: 50px;
+  }
+
+  .h3-modal {
+    font-size: 30px;
+  }
+
+  .img-modal {
+    width: 100%;
+  }
+
+  .text-modal {
+    font-size: 20px;
+  }
+
+  .modal-content {
+    padding: 40px;
+    max-height: 85%;
+    padding-left: 100px;
+    margin: auto;
+    width: 60%;
+  }
+
+  .modal {
+    padding-top: 80px; /* Location of the box */
+    padding-bottom: 140px;
+    width: 100%; /* Full width */
+    height: 80%; /* Full height */
+  }
+
+  .modal-head-text {
+    font-size: 20px;
+    padding: 10px 70px 10px 0px;
+  }
+
+  .close {
+    padding-right: 50px;
+  }
+
+  #logo {
+    content: url("images/LOGO2-02.png");
+  }
+
+  .img-grid {
+    border-radius: 20px;
+    margin: 20px;
+    width: 100%;
+  }
+
+  ul {
+    margin: 10px;
+  }
+
+  .Gallery {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.h2-modal,
+.h3-modal {
+  font-family: "Cormorant Garamond", serif;
+  color: #590b16;
+}
+
+.container-2 {
+  display: inline-block;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: white;
+  font-weight: 100;
+  position: relative;
+  max-width: 180px;
+  min-width: 180px;
+}
+
+.container-2:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  color: #e77d79;
+}
+
+.img-modal {
+  display: block;
+  margin: auto;
+  justify-content: center;
+  border-radius: 5px;
+  width: auto;
+  height: 175px;
+}
+
+.text-modal {
+  display: block;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin: 8px;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255);
+  display: block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-head-text {
+  text-align: justify;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.myImg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.row-2 {
+  display: flex;
+  justify-content: flex-start;
+  overflow-y: hidden;
+}
+
+.img-grid {
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
+  margin: auto;
+}
